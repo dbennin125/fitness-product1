@@ -1,14 +1,14 @@
-import itemsSold from '.data/'; //importing the data from data array
-import createItems from './DOMRender';//importing the DOM render
+import itemsSold from './data.js'; //importing the data from data array
+import createItems from './DOMRender.js';//importing the DOM render
 
 //creating our name for container and getting element from HTML
-const productCotainer = document.getElementById('container');
+const productCotainer = document.getElementById('myList');
 
-for (let i = 0; i <itemsSold.length; i++) {
+for (let i = 0; i < itemsSold.length; i++) {
     const product = itemsSold [i];
-    const listOfItems = createItems(itemsSold);
+    
+    const listOfItems = createItems(product);
 
     productCotainer.appendChild(listOfItems);
 }
-
 

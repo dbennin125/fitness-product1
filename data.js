@@ -39,7 +39,7 @@ const preWorkout = {
 };
 //fouth one
 const mealPlan = {
-    id: 5,
+    id: 'mealPlan',
     name: 'Meal plan',
     image: 'foodpicture.jpeg', 
     description:'You need fuel to grow, let us help you',
@@ -49,7 +49,7 @@ const mealPlan = {
 };
 //fifth one
 const assesment = {
-    id: 6,
+    id: 'assesment',
     name: 'Assesment',
     image: 'check.jpeg', 
     description:'Let us see where you are at and get you there',
@@ -59,7 +59,7 @@ const assesment = {
 };
 //sixth one
 const bootcamp = {
-    id: 7,
+    id: 'bootcamp',
     name:'Bootcamp',
     image:'bootcamp.jpeg',
     description:'Let us train you in group to take you to the next level',
