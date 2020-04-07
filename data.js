@@ -1,5 +1,5 @@
 const workoutHour = {
-    id: 1,
+    id: 'workoutHour',
     name: 'One hour session',
     image: 'hour-workout.jpeg', //image: ./asset/hoursesion? I read the directions and I don't think we've done this.
     description:'A full hour of one on one coacing from our highly trained staff',
@@ -9,7 +9,7 @@ const workoutHour = {
 };
 //first one
 const workoutHalf = {
-    id: 2,
+    id: 'workoutHalf',
     name: 'Half hour session',
     image: 'half-workout.jpeg',
     description: 'A half hour of personal coaching for a value price',
@@ -19,7 +19,7 @@ const workoutHalf = {
 };
 //second one
 const protein = {
-    id: 3,
+    id: 'protein',
     name: 'Protein powder',
     image: 'protein.jpeg', 
     description:'This protein powder will get your swole',
@@ -29,7 +29,7 @@ const protein = {
 };
 //third one
 const preWorkout = {
-    id: 4,
+    id: 'preWorkout',
     name: 'Pre workout',
     image: 'preWorkout.jpeg', 
     description:'This will get you pumped up',
