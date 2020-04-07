@@ -1,13 +1,13 @@
 export default function createItems(products) {
     //time to create the elements to export
-    const li = document.createElement('li'); 
+    const productList = document.createElement('li'); 
     //creating list to send return
 
     const categoryList = document.createElement('ol');
-    categoryList.textContent = products.category;
+    categoryList.textContent = `Category: ${products.category}`;
     
     //creating my name via h3 element
-    const nameHeader = document.createElement('h3'); 
+    const nameHeader = document.createElement('h2'); 
     //assigning the nameHeader to the the objects name key
     nameHeader.textContent = products.name; 
     
@@ -23,18 +23,18 @@ export default function createItems(products) {
     itemDescription.textContent = products.description;
     
     //creating your prices with h4 element
-    const price = document.createElement('h4');
+    const price = document.createElement('p');
     //giving the price 
-    price.textContent = products.price;
+    price.textContent = `$ ${products.price}`; //learned this trick from Joey. Thanks JOEY!!
 
     
     //creating the lists of products named up above by
     //appending child to the parent
-    li.appendChild(nameHeader);
-    li.appendChild(images);
-    li.appendChild(price);
-    li.appendChild(itemDescription);
-    li.appendChild(categoryList);
+    productList.appendChild(nameHeader);
+    productList.appendChild(images);
+    productList.appendChild(price);
+    productList.appendChild(itemDescription);
+    productList.appendChild(categoryList);
     //I believe you can add togeter with li.appendChild(nameHeader, images, price, itemDescription, categoryList);
-    return li;
+    return productList;
 }
