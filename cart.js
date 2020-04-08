@@ -4,7 +4,7 @@ const Protein = {
 };
 const PreWorkOut = {
     id: 'preWorkout',
-    quantity: `${1}`,
+    quantity: `${2}`,
 };
 const cartItems = [
     Protein,

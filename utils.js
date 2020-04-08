@@ -37,14 +37,14 @@ function roundCurrency(amount) {
 }
 
 export function calcOrderTotal(cart, products) {
-    let orderTotal = 0;
+    let finalTotal = 0;
 
     for (let i = 0; i < cart.length; i++) {
         const lineItem = cart[i];
         const product = findById(products, lineItem.id);
         const lineTotal = calcLineTotal(lineItem.quantity, product.price);
-        orderTotal += lineTotal;
+        finalTotal += lineTotal;
     }
 
-    return roundCurrency(orderTotal);
+    return roundCurrency(finalTotal);
 }
