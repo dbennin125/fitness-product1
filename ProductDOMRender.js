@@ -1,6 +1,6 @@
 export default function createItems(products) {
     //time to create the elements to export
-    const productList = document.createElement('li'); 
+    const li = document.createElement('li'); 
     //creating list to send return
 
     const categoryList = document.createElement('ol');
@@ -30,11 +30,11 @@ export default function createItems(products) {
     
     //creating the lists of products named up above by
     //appending child to the parent
-    productList.appendChild(nameHeader);
-    productList.appendChild(images);
-    productList.appendChild(itemDescription);
-    productList.appendChild(price);
-    productList.appendChild(categoryList);
+    li.appendChild(nameHeader);
+    li.appendChild(images);
+    li.appendChild(itemDescription);
+    li.appendChild(price);
+    li.appendChild(categoryList);
     //I believe you can add togeter with li.appendChild(nameHeader, images, price, itemDescription, categoryList);
-    return productList;
+    return li;
 }

@@ -4,7 +4,7 @@ const workoutHour = {
     image: 'hour-workout.jpeg', //image: ./asset/hoursesion? I read the directions and I don't think we've done this.
     description:'A full hour of one on one coacing from our highly trained staff.',
     category: 'Service',
-    price:  70.00
+    price: 70.00
     
 };
 //first one
@@ -24,7 +24,7 @@ const protein = {
     image: 'protein.jpeg', //placeholder
     description:'This protein powder will get your swole!',
     category: 'Product',
-    price:  20.00
+    price: 20.00
     
 };
 //third one
@@ -34,7 +34,7 @@ const preWorkout = {
     image: 'preWorkout.jpeg', //placeholder
     description:'This will get you pumped up!',
     category: 'Product',
-    price:  25.00
+    price: 25.00
     
 };
 //fouth one
@@ -44,7 +44,7 @@ const mealPlan = {
     image: 'foodpicture.jpeg', //placeholder
     description:'You need fuel to grow, let us help you.',
     category: 'Product',
-    price:  25.00
+    price: 25.00
     
 };
 //fifth one
@@ -54,7 +54,7 @@ const assesment = {
     image: 'check.jpeg', //placeholder
     description:'Let us see where you are at and get you there',
     category: 'Service',
-    price:  40.00
+    price: 40.00
     
 };
 //sixth one

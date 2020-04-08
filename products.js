@@ -1,5 +1,5 @@
 import itemsSold from './data.js'; //importing the data from data array
-import createItems from './DOMRender.js';//importing the DOM render
+import createItems from './ProductDOMRender.js';//importing the DOM render
 
 //creating our name for container and getting element from HTML
 const productCotainer = document.getElementById('myList');

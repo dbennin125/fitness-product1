@@ -25,6 +25,12 @@ export function calcLineTotal(quantity, price) {
     return roundCurrency(amount);
 }
 
+export function makeReadablePrice(price) {
+    const readablePrice = `$${Number(price).toFixed(2)}`;
+    
+    return readablePrice;
+}
+
 // fun with JavaScript maths and floating point numbers!
 function roundCurrency(amount) {
     return Math.round(amount * 100) / 100;
