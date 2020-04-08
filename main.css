@@ -1,0 +1,40 @@
+.top1 {
+    margin: 5em;
+    border: 8em;
+    padding: 2em;
+    color: rgba(175, 130, 14, 0.781);
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(48, 36, 32);
+    box-shadow: dimgray 5px;
+    border: dimgray 7px;
+}
+.img-section {
+    display: flex;
+    flex-direction: column;
+    margin: 5em;
+    border: 7em;
+    padding: 2em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+a:hover {
+    background-color: mediumblue;
+    color: yellow;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8em;
+    grid: 10px;
+    border: 2em;
+    padding: 2em;
+    background-color:black ;
+    color: red;
+    
+}
