@@ -3,13 +3,13 @@
 
 // IMPORT MODULES under test here:
 // import example from '../src/example.js';
-//const test = QUnit.test;
+const test = QUnit.test;
 //import { calcLineTotal } from '../utils.js';
 //import itemsSold from '../data.js';
 //import cartItems from '../cart.js';
 //
 
-//test('Testing the DOM render for HTML function', function(assert) {
+test('Testing the DOM render for HTML function', function(assert) {
     //Arrange
     // Set up your parameters and expectations
  
@@ -27,16 +27,8 @@
     
     //Assert
     // Make assertions about what is expected valid result
- //   assert.equal(true, true);
-//});
+    assert.equal(true, true);
+});
 
 //it is returning "<tr><td>Protein powder</td><td>2</td><td>20</td><td>NaN40</td></tr>"
 //I don't know how to convert the NaN to the acutal number 40, same issue with the 2.
-
-
-
-
-
-
-
-
