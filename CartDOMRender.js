@@ -9,7 +9,7 @@ function makeTable(products, cartItem) {
     quanityData.textContent = cartItem.quantity;//assigning it data
     
     const priceData = document.createElement('td');
-    priceData.textContent = (products.price);
+    priceData.textContent = products.price;
     
     const amountData = document.createElement('td');
     const finalPrice = (products.price * cartItem.quantity);
@@ -24,4 +24,3 @@ function makeTable(products, cartItem) {
 }
 export default makeTable;
 
-//was passing no long is passing

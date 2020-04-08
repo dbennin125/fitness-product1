@@ -1,4 +1,4 @@
-//import makeTable from '../CartDOMRender.js';
+import makeTable from '../CartDOMRender.js';
 //import { findById } from '../utils.js';
 
 // IMPORT MODULES under test here:
@@ -12,23 +12,32 @@ const test = QUnit.test;
 test('Testing the DOM render for HTML function', function(assert) {
     //Arrange
     // Set up your parameters and expectations
- 
     
-   // const cartItem = { //cart item expected
-      //  id: 'protein',
-      //  quantity: 2
-    //};
-   // const protein = findById(itemsSold, cartItem.id);
-   //const result = '<tr><td>Protein powder</td>td>2</td><td>20</td><td>40</td></tr>';
+    const protein = {
+        id: 'protein',
+        name: 'Protein powder',
+        image: 'protein.jpeg', //placeholder
+        description:'This protein powder will get your swole!',
+        category: 'Product',
+        price: 20.00
+      
+    };
+    
+    const cartItem = { //cart item expected
+        id: 'protein',
+        quantity: 2,
+    };
+   
+    
+    const expected = '<tr><td>Protein powder</td><td>2</td><td>20</td><td>40</td></tr>';
     //Act 
     // Call the function you're testing and set the result to a const
-   // const domCart = makeTable(protein, result);
-    //const html = domCart.outerHTML;
+    const domCart = makeTable(protein, cartItem);
+    const html = domCart.outerHTML;
     
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(true, true);
+    assert.equal(html, expected);
 });
 
-//it is returning "<tr><td>Protein powder</td><td>2</td><td>20</td><td>NaN40</td></tr>"
-//I don't know how to convert the NaN to the acutal number 40, same issue with the 2.
+//test works!
