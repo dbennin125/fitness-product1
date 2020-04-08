@@ -9,7 +9,7 @@ function makeTable(products, cartItem) {
     quanityData.textContent = cartItem.quantity;//assigning it data
     
     const priceData = document.createElement('td');
-    priceData.textContent = typeof(products.price);
+    priceData.textContent = (products.price);
     
     const amountData = document.createElement('td');
     const finalPrice = (products.price * cartItem.quantity);
