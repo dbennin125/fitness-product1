@@ -30,13 +30,13 @@ function roundCurrency(amount) {
     return Math.round(amount * 100) / 100;
 }
 
-export function calcOrderTotal(cart, prodcts) {
+export function calcOrderTotal(cart, products) {
     let orderTotal = 0;
 
     for (let i = 0; i < cart.length; i++) {
         const lineItem = cart[i];
-        const fruit = findById(prodcts, lineItem.id);
-        const lineTotal = calcLineTotal(lineItem.quantity, fruit.price);
+        const product = findById(products, lineItem.id);
+        const lineTotal = calcLineTotal(lineItem.quantity, product.price);
         orderTotal += lineTotal;
     }
 
