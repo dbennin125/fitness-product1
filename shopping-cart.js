@@ -9,7 +9,7 @@ import makeTable from './CartDOMRender.js';//importing the DOM render
 const myTbody = document.querySelector('tbody');
 const finalTotal = document.getElementById('tfoot');
 //this is where our appened order button will go back to the element in HTML
-const orderButton = document.getElementById('button'); 
+const orderButton = document.getElementById('buyItem'); 
 
 //we will no longer need our cartItem because the data is in local storage
 //we will get the local storage by const
