@@ -38,3 +38,7 @@ a:hover {
     color: red;
     
 }
+
+orderButton:disabled {
+    opacity: 0.5;
+}
