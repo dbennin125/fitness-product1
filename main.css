@@ -1,15 +1,18 @@
-.top1 {
+* {
+    box-sizing: border-box;
+    
+}.top1 {
     margin: 5em;
     border: 8em;
     padding: 2em;
-    color: rgba(175, 130, 14, 0.781);
+    color: rgb(240, 203, 109);
     display: flex;
     flex-direction:column ;
     align-items: center;
     flex-wrap: wrap;
     background-color: rgb(48, 36, 32);
-    box-shadow: dimgray 5px;
-    border: dimgray 7px;
+    border: solid rgb(95, 33, 33) 7px;
+    border-radius: 50px;
 }
 .img-section {
     display: flex;
@@ -19,6 +22,9 @@
     padding: 2em;
     align-items: center;
     flex-wrap: wrap;
+    background-color: rgb(228, 118, 118) ;
+    border: solid royalblue 10px;
+    border-radius: 0.8em;
 }
 
 a:hover {
@@ -26,19 +32,6 @@ a:hover {
     color: yellow;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 8em;
-    grid: 10px;
-    border: 2em;
-    padding: 2em;
-    background-color:black ;
-    color: red;
-    
-}
-
 orderButton:disabled {
-    opacity: 0.5;
+    opacity: 2.5;
 }

@@ -24,4 +24,3 @@ test('Test to find if calcOrderTotal works', function(assert) {
     assert.equal(expected, result);
 });
  
- 

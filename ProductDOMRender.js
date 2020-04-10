@@ -4,7 +4,7 @@ function createItems(products) {
     //time to create the elements to export
     const li = document.createElement('li'); 
     //creating list to send return
-
+    
     const categoryList = document.createElement('ol');
     categoryList.textContent = `Category: ${products.category}`;
     
@@ -16,7 +16,7 @@ function createItems(products) {
     //creating images
     const images = document.createElement('img'); 
     //assigning new variable to a source
-    images.src = 'https://pbs.twimg.com/profile_images/713412468748328960/TbZI9Fvt.jpg';
+    images.src = './assets/' + products.image;
     //NOTE!!!!this image is place holder unil the assests folder is filled...
     
     //creating the description
@@ -67,6 +67,7 @@ function createItems(products) {
     
     p.appendChild(addButton);//your sending your created buttons to be displayed as dynamic
     //creating the lists of products named up above by
+    li.classList.add('products');
     //appending child to the parent
     li.appendChild(nameHeader);
     li.appendChild(images);

@@ -13,10 +13,10 @@ const orderButton = document.getElementById('buyItem');
 
 //we will no longer need our cartItem because the data is in local storage
 //we will get the local storage by const
-const json = localStorage.getItem('CART'); //grabbing the contents of cart with getItem command
+const localCart = localStorage.getItem('CART'); //grabbing the contents of cart with getItem command
 let cart; //we are intializing the cart, the let means it will change
-if (json) { //the data we have is in a string,  so a parse is needed to use the data
-    cart = JSON.parse(json); //we are bring the string back to be used as and object
+if (localCart) { //the data we have is in a string,  so a parse is needed to use the data
+    cart = JSON.parse(localCart); //we are bring the string back to be used as and object
 } else {
     cart = []; //we are a robot and need to check if there is cart, if there isn't we make one
 }
@@ -44,7 +44,7 @@ if (cart.length === 0) {
 } else {
     orderButton.addEventListener('click', () => {
         localStorage.removeItem('CART'); //getting rid of the stored local data after order is sent
-        alert('Order place:\n' + JSON.stringify(cart, true, 2)); //give the user feed back via order item string
+        alert('Thank you for ordering:\n' + JSON.stringify(cart, true, 2)); //give the user feed back via order item string
         window.location = '../'; //leads of back to home page completing order
     });
 }
